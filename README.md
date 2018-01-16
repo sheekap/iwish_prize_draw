@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app will show the prize a participant at our stall has won.
+There are 3 tiers of prizes with tier 1 being the cheapest and tier 3 being the most expensive.
+Every N-th visitor to this app will receive tier 2 and every M-th visitor will receive tier 3 where N < M.
+Everyone else will receive tier 1.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app will be hosted on Heroku.
