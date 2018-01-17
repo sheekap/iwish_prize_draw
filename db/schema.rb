@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180116173714) do
+ActiveRecord::Schema.define(version: 20180117105339) do
 
   create_table "prizes", force: :cascade do |t|
-    t.integer "counter"
+    t.integer "counter", default: 0
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
