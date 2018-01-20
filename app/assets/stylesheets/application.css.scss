@@ -12,4 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+
+$blue: #349fb4;
+
+body {
+  width: 90%;
+}
