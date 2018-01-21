@@ -1,0 +1,44 @@
+<%= form_with(model: prize, local: true) do |form| %>
+  <% if prize.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prize.errors.count, "error") %> prohibited this prize from being saved:</h2>
+
+      <ul>
+      <% prize.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="row">
+  <div class="large-10">
+    <%= label_tag :zendesk_logo %> <%= form.file_field :zendesk_logo %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-10">
+    <%= label_tag :tier_1_prize %> <%= form.file_field :tier_1_prize %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-10">
+    <%= label_tag :tier_2_prize %> <%= form.file_field :tier_2_prize %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-10">
+    <%= label_tag :tier_3_prize %> <%= form.file_field :tier_3_prize %>
+  </div>
+</div>
+
+  <div class="row actions">
+    <div class="large-10">
+      <%= form.submit %>
+    </div>
+  </div>
+<% end %>

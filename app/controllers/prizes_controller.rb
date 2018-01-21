@@ -1,11 +1,10 @@
 class PrizesController < ApplicationController
-  before_action :set_prize, only: [:admin, :show, :edit, :update, :destroy]
+  before_action :set_prize, only: [:admin, :index, :show, :edit, :update, :destroy]
 
   def admin
   end
 
   def index
-    @prizes = Prize.all
   end
 
   def show
@@ -57,7 +56,7 @@ class PrizesController < ApplicationController
      end
     end
 
-    def example_params
-      params.fetch(:prize, {})
+    def prize_params
+      params.require(:prize).permit(:zendesk_logo, :tier_1_prize, :tier_2_prize, :tier_3_prize)
     end
 end

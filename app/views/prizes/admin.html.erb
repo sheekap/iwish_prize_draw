@@ -1,4 +1,11 @@
-<%= form_for @prize, url: prize_show_path, html: { multipart: true } do  |form| %>
-  <%= label_tag :zendesk_logo %> <%= form.file_field :zendesk_logo %>
-  <%= form.submit %>
-<% end %>
+<h3>Easy DB Check</h3>
+<p> There should only ever be 1 prize object at any given time</p>
+
+<div class="row">
+  <div class="large-5">
+    <p>Prize Object Count: <%= Prize.count %></p>
+  </div>
+  <div class="large-5">
+    <p>Counter: <%= @prize.counter %></p>
+  </div>
+</div>

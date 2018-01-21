@@ -11,7 +11,17 @@
 <div class="row">
   <div>
     <h3>You've won a prize!</h3>
-    <h6>Counter: <%= @prize.counter %></h6>
-    <h6>Prize Count(should be 1): <%= Prize.count %></h6>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12">
+    <% if @prize.calculate_prize_level == 1 %>
+      <%= image_tag @prize.tier_1_prize.url %>
+    <% elsif @prize.calculate_prize_level == 2 %>
+      <%= image_tag @prize.tier_2_prize.url %>
+    <% else %>
+      <%=image_tag @prize.tier_3_prize.url %>
+    <% end %>
   </div>
 </div>
