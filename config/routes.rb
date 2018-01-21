@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :wallpapers
   root 'prizes#show'
   get 'prizes/admin'
   resources :prizes

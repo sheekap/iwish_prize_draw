@@ -13,26 +13,37 @@
 
 
 <div class="row">
-  <div class="large-10">
-    <%= label_tag :zendesk_logo %> <%= form.file_field :zendesk_logo %>
+  <div class="large-5 medium-5 small-5 column">
+    <%= label_tag :zendesk_logo %>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <%= form.file_field :zendesk_logo %>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-10">
+  <div class="large-5 medium-5 small-5 column">
     <%= label_tag :tier_1_prize %> <%= form.file_field :tier_1_prize %>
   </div>
-</div>
-
-<div class="row">
-  <div class="large-10">
-    <%= label_tag :tier_2_prize %> <%= form.file_field :tier_2_prize %>
+  <div class="large-5 medium-5 small-5 column">
   </div>
 </div>
 
 <div class="row">
-  <div class="large-10">
-    <%= label_tag :tier_3_prize %> <%= form.file_field :tier_3_prize %>
+  <div class="large-5 medium-5 small-5 column">
+    <%= label_tag :tier_2_prize %>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <%= form.file_field :tier_2_prize %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-5 medium-5 small-5 column">
+    <%= label_tag :tier_3_prize %>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <%= form.file_field :tier_3_prize %>
   </div>
 </div>
 

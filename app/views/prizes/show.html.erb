@@ -1,21 +1,24 @@
-<div class="row zendesk-header">
-  <div class="large-3"><%= image_tag @prize.zendesk_logo.url(:normal) %></div>
-</div>
+<!-- <div class="row zendesk-header">
+  <div class="large-5 medium-5 small-5 column zendesk-logo-image"><%= image_tag @prize.zendesk_logo.url(:normal) %></div>
+  <div class="large-6 medium -6 small -6 column zendesk-title">
+    <h4>Zendesk iWish Prize Draw</h4>
+  </div>
+</div> -->
 
 <div class="row">
-  <div class="large-6, ">
+  <div class="large-12 medium-12 small-12 column">
     <h1>YAY</h1>
   </div>
 </div>
 
 <div class="row">
-  <div>
+  <div class="large-12 medium-12 small-12 column">
     <h3>You've won a prize!</h3>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-12">
+  <div class="large-12 medium-12 small-12 column">
     <% if @prize.calculate_prize_level == 1 %>
       <%= image_tag @prize.tier_1_prize.url %>
     <% elsif @prize.calculate_prize_level == 2 %>

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="large-12 medium-12 small-12 column">
+    <h2>Wallpapers</h2>
+  </div>
+</div>
+
+<% @wallpapers.each do |wp| %>
+<div class="row">
+  <div class="large-5 medium-5 small-5 column">
+    <p><%= wp.paltform %></p>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <%= image_tag wp.url(:thumb) %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 medium-12 small-12 column">
+    <%= link_to 'New Wallpaper', new_wallpaper_path %>
+  </div>
+</div>
