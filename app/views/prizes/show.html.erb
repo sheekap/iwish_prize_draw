@@ -17,8 +17,8 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="large-12 medium-12 small-12 column">
+<div class="row prize-container">
+  <div class="large-12 medium-12 small-12 column prize-image-container">
     <% if @prize.calculate_prize_level == 1 %>
       <%= image_tag @prize.tier_1_prize.url %>
     <% elsif @prize.calculate_prize_level == 2 %>

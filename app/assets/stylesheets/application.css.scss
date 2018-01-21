@@ -16,13 +16,25 @@
 
  */
 
-$blue: #349fb4;
+$blue: #228b9e;
 
 body {
   width: 90%;
+  background-color: $blue;
+  color: white;
 }
 
-.zendesk-title{
-  h4 { color: $blue; }
-  text-align: left;
+.prize-container{
+  background-color: white;
+  border: 0.5em solid;
+  border-color: #ffd243;
+  border-radius: 3em;
+}
+
+.prize-image-container{
+  padding: 2em;
+  img {
+    display: block;
+    margin: 0 auto;
+   }
 }

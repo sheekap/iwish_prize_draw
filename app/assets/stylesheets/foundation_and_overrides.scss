@@ -104,7 +104,7 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $info-color: #a0d3e8;
 
 // $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
+$ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
@@ -125,7 +125,7 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: $ghost;
 $body-font-family: $font-family-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -193,7 +193,7 @@ $body-font-family: $font-family-serif;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: $body-font-family
+  font-family: $body-font-family;
 }
 
 // $include-html-type-classes: $include-html-classes;
@@ -202,7 +202,7 @@ h1,h2,h3,h4,h5,h6 {
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $ghost;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -623,7 +623,7 @@ h1,h2,h3,h4,h5,h6 {
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color($black, $lightness: 30%);
+$form-label-font-color: $ghost;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
