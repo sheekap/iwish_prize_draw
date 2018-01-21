@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'foundation-rails'
+gem 'paperclip', '~> 5.0.0'
 
 
 

@@ -10,12 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180121133133) do
+ActiveRecord::Schema.define(version: 20180121144219) do
 
   create_table "prizes", force: :cascade do |t|
     t.integer "counter", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "zendesk_logo_file_name"
+    t.string "zendesk_logo_content_type"
+    t.integer "zendesk_logo_file_size"
+    t.datetime "zendesk_logo_updated_at"
+    t.string "tier_1_prize_file_name"
+    t.string "tier_1_prize_content_type"
+    t.integer "tier_1_prize_file_size"
+    t.datetime "tier_1_prize_updated_at"
+    t.string "tier_2_prize_file_name"
+    t.string "tier_2_prize_content_type"
+    t.integer "tier_2_prize_file_size"
+    t.datetime "tier_2_prize_updated_at"
+    t.string "tier_3_prize_file_name"
+    t.string "tier_3_prize_content_type"
+    t.integer "tier_3_prize_file_size"
+    t.datetime "tier_3_prize_updated_at"
   end
 
 end
