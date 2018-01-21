@@ -8,4 +8,4 @@
 
 Prize.destroy_all
 
-Prize.create!
+# Prize.create!

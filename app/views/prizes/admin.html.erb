@@ -1,0 +1,4 @@
+<%= form_for @prize, url: prize_show_path, html: { multipart: true } do  |form| %>
+  <%= label_tag :zendesk_logo %> <%= form.file_field :zendesk_logo %>
+  <%= form.submit %>
+<% end %>

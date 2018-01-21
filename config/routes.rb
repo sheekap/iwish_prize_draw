@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'prize#show'
-  get 'prize/show'
+  root 'prizes#show'
+  resources :prizes
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
