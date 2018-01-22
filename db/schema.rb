@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180121175910) do
+ActiveRecord::Schema.define(version: 20180122084517) do
 
   create_table "prizes", force: :cascade do |t|
     t.integer "counter", default: 0
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20180121175910) do
   end
 
   create_table "wallpapers", force: :cascade do |t|
-    t.string "platform"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_file_name"

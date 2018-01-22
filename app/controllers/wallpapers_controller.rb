@@ -53,6 +53,6 @@ class WallpapersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def wallpaper_params
-      params.fetch(:wallpaper, {})
+      params.require(:wallpaper).permit(:description, :image)
     end
 end
