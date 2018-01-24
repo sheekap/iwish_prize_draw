@@ -13,11 +13,11 @@ class Prize < ApplicationRecord
 
   def prize_draw(number)
     if number < 300 && self.number_of_bottles > 0
-      2
       decrement_bottles
+      2
     elsif number < 700 && self.number_of_cameras > 0
-      3
       decrement_cameras
+      3
     else
       1
     end
