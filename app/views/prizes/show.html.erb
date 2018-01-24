@@ -1,12 +1,51 @@
+<!-- <div class="row prize-container">
+  <div class="large-12 medium-12 small-12 column prize-image-container">
+    <%# if @prize.calculate_prize_level == 1 %>
+      <%# id = Wallpaper.get_random_wallpaper_id %>
+      <%#= image_tag Wallpaper.find(id).image.url %>
+    <%# elsif @prize.calculate_prize_level == 2 %>
+      <%#= image_tag @prize.tier_2_prize.url %>
+    <%# else %>
+      <%#=image_tag @prize.tier_3_prize.url %>
+    <%# end %>
+  </div>
+</div> -->
+<% lucky_number = rand(1500)  %>
+<% if @prize.prize_draw(lucky_number) == 1 %>
 <div class="row prize-container">
   <div class="large-12 medium-12 small-12 column prize-image-container">
-    <% if @prize.calculate_prize_level == 1 %>
-      <% id = Wallpaper.get_random_wallpaper_id %>
-      <%= image_tag Wallpaper.find(id).image.url %>
-    <% elsif @prize.calculate_prize_level == 2 %>
-      <%= image_tag @prize.tier_2_prize.url %>
-    <% else %>
-      <%=image_tag @prize.tier_3_prize.url %>
-    <% end %>
+    <%= image_tag @prize.tier_1_prize.url(:thumb) %>
   </div>
 </div>
+
+<div class="row prize-link-area">
+  <div class="large-12 medium-12 small-12 column prize-link">
+    <% id = Wallpaper.get_random_wallpaper_id %>
+    <h1><%= link_to "Click here to download a limited edition Zendesk wallpaper for your phone", wallpaper_path(Wallpaper.find(id)) %></h1>
+  </div>
+</div>
+<% elsif @prize.prize_draw(lucky_number) == 2 %>
+<div class="row prize-container">
+  <div class="large-12 medium-12 small-12 column prize-image-container">
+    <%= image_tag @prize.tier_2_prize.url(:thumb) %>
+  </div>
+</div>
+
+<div class="row prize-link-area">
+  <div class="large-12 medium-12 small-12 column prize-link">
+    <h1>Visit the Zendesk stand to collect your prize</h1>
+  </div>
+</div>
+<% else %>
+<div class="row prize-container">
+  <div class="large-12 medium-12 small-12 column prize-image-container">
+    <%=image_tag @prize.tier_3_prize.url(:thumb) %>
+  </div>
+</div>
+
+<div class="row prize-link-area">
+  <div class="large-12 medium-12 small-12 column prize-link">
+    <h1>Visit the Zendesk stand to collect your prize</h1>
+  </div>
+</div>
+<% end %>
