@@ -8,8 +8,13 @@
 
 <div class="row prize-link-area">
   <div class="large-12 medium-12 small-12 column prize-link">
-    <% id = Wallpaper.get_random_wallpaper_id %>
-    <h1><%= link_to "Click here to download a limited edition Zendesk wallpaper for your phone", wallpaper_path(Wallpaper.find(id)) %></h1>
+    <% if Wallpaper.any? %>
+      <% id = Wallpaper.get_random_wallpaper_id %>
+      <h1><%= link_to "Click here to download a limited edition Zendesk wallpaper for your phone", wallpaper_path(Wallpaper.find(id)) %></h1>
+    <% else %>
+      <h1>Oh no! Your limited edition Zendesk wallpaper is missing!</h1>
+      <h3>Please contact a Zendesk representative (the people in the unicorn shirts).</h3>
+    <% end %>
   </div>
 </div>
 <% elsif @prize.prize_draw(lucky_number) == 2 %>

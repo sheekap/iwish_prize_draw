@@ -8,5 +8,3 @@
 
 Prize.destroy_all
 Wallpaper.destroy_all
-
-# Prize.create!
