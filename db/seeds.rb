@@ -7,5 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Prize.destroy_all
-
-# Prize.create!
+Wallpaper.destroy_all

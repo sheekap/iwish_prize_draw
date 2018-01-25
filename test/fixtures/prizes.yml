@@ -1,9 +1,43 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+prize_with_no_cameras:
   counter: 1
-  image: MyString
+  tier_1_prize_file_name: "first_file.jpg"
+  tier_1_prize_content_type: "image/jpeg"
+  tier_1_prize_file_size: 2300296
+  tier_2_prize_file_name: "second_file.jpg"
+  tier_2_prize_content_type: "image/jpeg"
+  tier_2_prize_file_size: 2300296
+  tier_3_prize_file_name: "third_file.jpg"
+  tier_3_prize_content_type: "image/jpeg"
+  tier_3_prize_file_size: 2300296
+  number_of_cameras: 0
+  number_of_bottles: 10
 
-two:
+prize_with_no_bottles:
   counter: 1
-  image: MyString
+  tier_1_prize_file_name: "first_file.jpg"
+  tier_1_prize_content_type: "image/jpeg"
+  tier_1_prize_file_size: 2300296
+  tier_2_prize_file_name: "second_file.jpg"
+  tier_2_prize_content_type: "image/jpeg"
+  tier_2_prize_file_size: 2300296
+  tier_3_prize_file_name: "third_file.jpg"
+  tier_3_prize_content_type: "image/jpeg"
+  tier_3_prize_file_size: 2300296
+  number_of_cameras: 10
+  number_of_bottles: 0
+
+prize_with_bottles_and_cameras:
+  counter: 1
+  tier_1_prize_file_name: "first_file.jpg"
+  tier_1_prize_content_type: "image/jpeg"
+  tier_1_prize_file_size: 2300296
+  tier_2_prize_file_name: "second_file.jpg"
+  tier_2_prize_content_type: "image/jpeg"
+  tier_2_prize_file_size: 2300296
+  tier_3_prize_file_name: "third_file.jpg"
+  tier_3_prize_content_type: "image/jpeg"
+  tier_3_prize_file_size: 2300296
+  number_of_cameras: 10
+  number_of_bottles: 10

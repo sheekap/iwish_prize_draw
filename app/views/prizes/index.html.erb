@@ -5,3 +5,27 @@
 </div>
 
 <%= render 'form', prize: @prize %>
+
+<div class="row">
+  <div class="large-10 medium-10 small-10 column">
+    <h3>Prize Count</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-5 medium-5 small-5 column">
+    <h6>Number of Camera's:</h6>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <h6><%= @prize.number_of_cameras %></h6>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-5 medium-5 small-5 column">
+    <h6>Number of Bottles:</h6>
+  </div>
+  <div class="large-5 medium-5 small-5 column">
+    <h6><%= @prize.number_of_bottles %></h6>
+  </div>
+</div>

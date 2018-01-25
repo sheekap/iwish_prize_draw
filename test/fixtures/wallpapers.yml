@@ -4,8 +4,8 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+first_wp:
+  description: "it's too late for this"
+  image_file_name: "filename.png"
+  image_content_type: "image/png"
+  image_file_size: 17758
