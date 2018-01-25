@@ -1,4 +1,4 @@
-require './test/test_helper'
+require 'test_helper'
 
 class PrizeTest < ActiveSupport::TestCase
   test "will not award camera as a prize if there are none" do
@@ -40,7 +40,5 @@ class PrizeTest < ActiveSupport::TestCase
     assert prize_tiers_array.include?(2)
     assert prize_tiers_array.include?(3)
   end
-
-
   # TODO: write tests to make sure decrement on bottles and cameras works okay
 end
