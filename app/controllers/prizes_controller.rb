@@ -1,5 +1,5 @@
 class PrizesController < ApplicationController
-  if Rails.env.priduction?
+  if Rails.env.production?
     http_basic_authenticate_with name: ENV.fetch('IWISH_USER'), password: ENV.fetch('IWISH_PWD'), only: :index
   end
 
