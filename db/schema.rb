@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180125161631) do
+ActiveRecord::Schema.define(version: 20180126152700) do
 
   create_table "prizes", force: :cascade do |t|
     t.integer "counter", default: 0
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 20180125161631) do
     t.datetime "tier_3_prize_updated_at"
     t.integer "number_of_cameras", default: 0
     t.integer "number_of_bottles", default: 0
+    t.integer "bottles_limit", default: 1500
+    t.integer "cameras_limit", default: 1500
   end
 
   create_table "wallpapers", force: :cascade do |t|

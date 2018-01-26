@@ -12,10 +12,10 @@ class Prize < ApplicationRecord
   validates_attachment_content_type :tier_3_prize, content_type: /\Aimage\/.*\z/
 
   def prize_draw(number)
-    if number > 1450 && self.number_of_cameras > 0
+    if number > self.cameras_limit && self.number_of_cameras > 0
       decrement_cameras
       3
-    elsif number < 300 && self.number_of_bottles > 0
+    elsif number > self.cameras_limit && self.number_of_bottles > 0
       decrement_bottles
       2
     else

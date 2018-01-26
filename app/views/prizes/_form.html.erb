@@ -48,7 +48,7 @@
     </div>
   </div>
 
- <div class="row">
+ <div class="row form-info">
    <div class="large-10 medium-10 small-10 column">
      <p>Use the following fields to set the numbers of each field at the start of the day or if, for whatever reason, the count of one or both of the prizes is incorrect and you need to reset it</p>
    </div>
@@ -69,6 +69,30 @@
     </div>
     <div class="large-5 medium-5 small-5 column">
       <%= form.text_field :number_of_cameras %>
+    </div>
+  </div>
+
+  <div class="row form-info">
+    <div class="large-10 medium-10 small-10 column">
+      <p>Make these numbers higher if you want to lower the amount of people winning bottles or cameras</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-5 medium-5 small-5 column">
+      <%= label_tag :bottles_limit, "Prize margin for bottles" %>
+    </div>
+    <div class="large-5 medium-4 small-5 column">
+      <%= form.text_field :bottles_limit %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-5 medium-5 small-5 column">
+      <%= label_tag :cameras_limit, "Prize margin for cameras" %>
+    </div>
+    <div class="large-5 medium-4 small-5 column">
+      <%= form.text_field :cameras_limit %>
     </div>
   </div>
 

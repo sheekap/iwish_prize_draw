@@ -57,6 +57,6 @@ class PrizesController < ApplicationController
     end
 
     def prize_params
-      params.require(:prize).permit(:zendesk_logo, :tier_1_prize, :tier_2_prize, :tier_3_prize, :number_of_cameras, :number_of_bottles)
+      params.require(:prize).permit(:zendesk_logo, :tier_1_prize, :tier_2_prize, :tier_3_prize, :number_of_cameras, :number_of_bottles, :bottles_limit, :cameras_limit)
     end
 end
