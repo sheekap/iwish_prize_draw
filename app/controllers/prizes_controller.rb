@@ -1,8 +1,9 @@
 class PrizesController < ApplicationController
-  before_action :set_prize, only: [:admin, :index, :show, :edit, :update, :destroy]
-
-  def admin
+  if Rails.env.priduction?
+    http_basic_authenticate_with name: ENV.fetch('IWISH_USER'), password: ENV.fetch('IWISH_PWD'), only: :index
   end
+
+  before_action :set_prize, only: [:admin, :index, :show, :edit, :update, :destroy]
 
   def index
   end
