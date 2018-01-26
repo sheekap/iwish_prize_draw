@@ -1,4 +1,4 @@
-<% lucky_number = rand(1500)  %>
+<% lucky_number = Random.new.rand(1500)  %>
 <% if @prize.prize_draw(lucky_number) == 1 %>
 <div class="row prize-container">
   <div class="large-12 medium-12 small-12 column prize-image-container">
