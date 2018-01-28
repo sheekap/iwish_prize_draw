@@ -16,11 +16,21 @@
 
  */
 
-$blue: #228b9e;
+/* Small Only */
+@media screen and (max-width: 39.9375em) {
+  .prize-container { margin-left: 1.5em; }
+  .prize-link-area { margin-left: 2.5em; }
+}
+
+/* Medium Only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .prize-container { margin-left: 2.2em; }
+  .prize-link-area { margin-left: 3.5em; }
+}
 
 body {
   width: 90%;
-  background-color: $blue;
+  background-color: #228b9e;;
   color: white;
 }
 
